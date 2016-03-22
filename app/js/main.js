@@ -32,8 +32,8 @@ App.Collections.States = Backbone.Collection.extend({
     search : function(letters){
         if(letters == "") return this;
  
-        var pattern = new RegExp(letters,"gi");
         return _(this.filter(function(data) {
+            var pattern = new RegExp(letters,"gi");
             return pattern.test(data.get("name"));
         }));
     }
@@ -86,6 +86,7 @@ App.Mixins.ListHelpers = {
         this.$(".search-reset").hide();
         this.$(".form-search input").val('');
         this.render();
+        this.$(".form-search input").focus();
     },
 
     sort: function(e){
