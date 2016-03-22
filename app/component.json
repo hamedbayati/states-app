@@ -1,0 +1,10 @@
+{
+	"name": "United State",
+	"version": "1.0.0",
+	"dependencies": {
+		"jquery": "latest",
+		"backbone-amd": "latest",
+		"underscore-amd": "latest",
+		"bootstrap": "3.*"
+	}
+}
